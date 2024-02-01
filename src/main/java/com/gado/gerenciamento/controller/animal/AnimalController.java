@@ -3,7 +3,6 @@ package com.gado.gerenciamento.controller.animal;
 import com.gado.gerenciamento.dominio.service.AnimalService;
 import com.gado.gerenciamento.controller.animal.dto.AnimalDto;
 import com.gado.gerenciamento.dominio.model.Animal;
-import com.gado.gerenciamento.dominio.repository.AnimalRepository;
 import jakarta.transaction.Transactional;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,9 +15,6 @@ import java.util.List;
 @RequestMapping("/animal")
 @CrossOrigin
 public class AnimalController {
-    
-    @Autowired
-    private AnimalRepository animalRepository;
     @Autowired
     private AnimalService animalService;
     

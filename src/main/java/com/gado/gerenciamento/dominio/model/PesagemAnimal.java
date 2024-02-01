@@ -25,8 +25,4 @@ public class PesagemAnimal {
   
   @Column(nullable = false)
   private LocalDateTime dataPesagem = LocalDateTime.now();
-  
-  public PesagemAnimal(Double peso) {
-    this.peso = peso;
-  }
 }
