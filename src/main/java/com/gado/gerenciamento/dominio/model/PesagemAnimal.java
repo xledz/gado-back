@@ -16,9 +16,12 @@ import java.time.LocalDateTime;
 @Setter
 public class PesagemAnimal {
   @Id
+  @GeneratedValue(strategy = GenerationType.IDENTITY)
+  private Long id;
+
   @ManyToOne(fetch = FetchType.LAZY)
-  @JoinColumn(name = "id")
-  private Animal animal_id;
+  @JoinColumn(name = "animal_id")
+  private Animal animalId;
   
   @Column(nullable = false)
   private Double peso;
